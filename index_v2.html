@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="P5_02_css/v2.css">
+
+    <script type="text/javascript" src="P5_01_js/citation.js" defer></script>
+
+    <script type="text/javascript" src="P5_01_js/main_v2.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/35a79302cd.js" crossorigin="anonymous"></script>
+
+    <title>Citations configurables</title>
+  </head>
+  <body>
+
+        <div class="container-fluid" id="top">
+            <header>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3>Projet 5 - OpenClassRooms</h3>
+                        <h6>Imaginez un générateur de citations</h6>
+                        <h6>Langage utilisé : JavaScript</h6>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div class="row">
+                    <div class="col-md-12 text-center" id="main-picture">
+                        <img class="img-fluid" src="P5_03_images/javascript-illustration.png" alt="Javascript" id="javascript"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center" id="parcours">
+                        <h4>Parcours : Développeur d'applications - Frontend</h4><br>
+                        <a class="btn btn-danger" href="#new-quote" role="button" id="etape">Etape 2</a>
+                    </div>
+                </div>
+            </section>
+        </div>    
+
+        <div class="container">
+            <section class="section">
+                    <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <article>
+                                    <h5>Bienvenue dans le générateur de citations</h5>
+                                    <div class="row">
+                                        <div class="col-lg-6 offset-lg-3" id="nBcitation">
+                                            <p id="first-step">Première étape :</p>
+                                            <div class="input-group mb-3 justify-content-center">
+                                                <div class="input-group-prepend">
+                                                  <label class="input-group-text" for="choice-number">Choisir un nombre entre 1 et 5</label>
+                                                </div>
+                                                <select class="custom-select" id="choice-number" type="number">
+                                                    <option selected>Choisir</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p id="second-step">Deuxième étape :</p>
+                                            <p>Choisir le thème des citations</p>
+                                            <button id="button-moto" type="button" class="btn btn-primary"><a href="#quote">Citations "moto"</a><i class="fas fa-motorcycle"></i></button>
+                                            <button id="button-foot" type="button" class="btn btn-primary"><a href="#quote">Citations "football"</a><i class="far fa-futbol"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p id="third-step">Troisième étape :</p>
+                                            <p>Choisissez entre "générer" de nouvelles citations et "arrêter" la génération</p>
+                                        </div>
+                                    </div>
+                                        <div class="row">
+                                            <div id="programme" class="col-sm-12 justify-content-around">
+                                                <button id="new-quote" type="button" class="btn btn-success" value="Nouvelles citations"><a href="#quote">Générer citations</a><i class="fas fa-recycle"></i></button>
+                                                <button id="reset" type="button" class="btn btn-danger">Arrêter la génération<i class="far fa-hand-paper"></i></button>
+                                            </div>
+                                        </div>
+                                </article>
+                            </div>
+                    </div>
+            </section>
+        </div>    
+
+        <div class="container-fluid" id="citations">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <div class="spinner-grow text-success" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="title-quote" class="col-md-12 text-center"></div>
+            </div>
+            <div class="row">
+                <div id="quote" class="col-md-12 text-center"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="footer">
+            <footer>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <p class="text-md-center"><a href="https://code.visualstudio.com/" target="blank">Edité avec Visual Studio Code</a></p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p class="text-md-center"><a href="https://getbootstrap.com/" target="blank">Framework Bootstrap</a></p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <p class="text-md-center"><a href="https://www.linkedin.com/in/benjamin-desole-333003b9" target="blank">Réalisé par Benjamin DESOLE</a></p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
